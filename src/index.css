@@ -1,0 +1,1714 @@
+.custom-navbar {
+  background-color: #333; /* Dark background for the navbar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 10px 20px; /* Padding for spacing */
+  height: 90px;
+  position: relative; /* Ensure it respects z-index */
+  z-index: 10; /* Set a high z-index to keep navbar above hero section */
+}
+
+/* Navbar Toggle Button Styling (for mobile) */
+.navbar-toggler {
+  border-color: #FF5733; /* Custom color for toggle button border */
+  z-index: 12; /* Ensure toggle button stays above content */
+}
+
+/* Collapse Menu Styling */
+.navbar-collapse {
+  position: absolute; /* Position it over the content */
+  top: 100%; /* Position it directly below the navbar */
+  left: 0;
+  right: 0;
+  background-color: #333; /* Same background as navbar */
+  z-index: 11; /* Higher z-index to place above the hero */
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Optional border for distinction */
+}
+
+/* Align nav links to the right */
+.nav-links-right {
+  margin-left: auto; /* Moves the nav links to the right */
+  display: flex;
+  align-items: center;
+}
+
+/* Nav Links Styling inside Collapse */
+.navbar-collapse .nav-link {
+  color: #ffffff; /* White color for links */
+  text-transform: uppercase; /* Uppercase for links */
+  font-size: 1rem; /* Font size for links */
+  transition: color 0.3s, background-color 0.3s; /* Smooth transitions */
+  width: 100%; /* Full width to stretch links */
+  padding: 10px 20px; /* Padding for better touch targets */
+}
+
+/* Ensure nav links are visible and properly aligned */
+.nav-link:hover {
+  color: #FF5733; /* Highlight color on hover */
+  background-color: rgba(255, 87, 51, 0.1); /* Subtle background color on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+  padding: 10px; /* Add some padding on hover */
+}
+
+/* Hero Section Adjustment */
+.hero {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  justify-content: center;
+  height: 500px; /* Adjust the height as needed */
+  text-align: center;
+  background: linear-gradient(to right, #a18cd1, #fbc2eb);
+  padding: 60px 20px; /* Padding around content */
+  position: relative; /* Required for proper layering */
+  overflow: hidden; /* Ensure content doesn't overflow */
+  z-index: 1; /* Lower than the navbar */
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styling for Main Content */
+.main-content {
+  margin: 0;
+  padding: 0;
+}
+
+
+.hero-content {
+  z-index: 1; /* Place content above the image */
+}
+
+.hero h1 {
+  font-size: 3rem; /* Larger font size for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  font-weight: bold; /* Make the heading bold */
+}
+
+.hero p {
+  font-size: 1.25rem; /* Slightly larger font size for the paragraph */
+  margin-bottom: 30px; /* Space below the paragraph */
+}
+
+.cta-button {
+  padding: 12px 24px;
+  background-color: #ffffff; /* Button background color */
+  color: #FF5733; /* Button text color */
+  border: none;
+  border-radius: 30px; /* Rounded corners */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.cta-button:hover {
+  background-color: #e65737; /* Change button background on hover */
+  color: #ffffff; /* Change button text color on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.hero-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  z-index: 0; /* Place image below the text */
+  object-fit: cover; /* Ensure image covers the area */
+  opacity: 0.5; /* Make image slightly transparent */
+}
+
+
+
+
+
+
+
+
+/* Features Section Styling */
+.features {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to next line on smaller screens */
+  justify-content: space-around; /* Space items evenly */
+  margin-top: 40px; /* Space above the features section */
+}
+
+.feature-item {
+  width: 100%;
+  max-width: 300px; /* Limit width for each feature item */
+  text-align: center;
+  margin: 20px; /* Space around each feature item */
+}
+
+.feature-item img {
+  width: 80px; /* Adjust width of icons */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space below the icon */
+}
+
+.feature-item h3 {
+  font-size: 1.5rem; /* Font size for feature headings */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.feature-item p {
+  font-size: 1rem; /* Font size for feature descriptions */
+  color: #666; /* Slightly lighter text color */
+}
+
+
+
+
+.services {
+  background-color: rgb(204, 193, 193); /* White background for services */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.services-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.service-item {
+  margin: 20px 0;
+}
+
+.service-item img {
+  width: 60px;
+  height: auto;
+}
+
+.service-item h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+
+
+.testimonials {
+  background-color: #f7f3f3; /* Light background */
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Space between items */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-item {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  flex: 1 1 350px; /* Card layout that expands */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #FF5733, #FFC300);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.testimonial-item img {
+  width: 80px; /* Size of user photo */
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover; /* Ensures the image covers the space */
+}
+
+.testimonial-item p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: justify; /* Align text for better readability */
+}
+
+.testimonial-item h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+/* @media (max-width: 768px) {
+  .testimonials h2 {
+    font-size: 2rem;
+  }
+
+  .testimonial-item {
+    padding: 20px;
+  }
+
+  .testimonial-item p {
+    font-size: 1rem;
+  }
+
+  .testimonial-item h4 {
+    font-size: 1rem;
+  }
+} */
+
+
+
+.contact-page {
+  background: url('src/assets/images/photo-1710701446907-b3681c6f69a5.jpg') no-repeat center center fixed; /* Set the image path */
+  background-size: cover; /* Cover the entire background */
+  padding: 60px 0; /* Padding to give some space around the form */
+}
+
+
+.contact-container {
+  background-color: #dfefed; /* Soft, soothing background */
+  padding: 40px; /* Padding around the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  max-width: 600px; /* Max width to center the form */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark color for the heading */
+  font-weight: bold; /* Bold heading */
+  text-transform: uppercase; /* Uppercase heading for emphasis */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Space between fields */
+}
+
+.form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 5px; /* Rounded input fields */
+  padding: 15px;
+  font-size: 1rem; /* Larger text for readability */
+  border: 1px solid #ddd; /* Subtle border */
+  transition: border-color 0.3s; /* Smooth border change on focus */
+}
+
+.form-control:focus {
+  border-color: #FF5733; /* Highlight border on focus */
+  box-shadow: 0 0 8px rgba(255, 87, 51, 0.2); /* Subtle shadow on focus */
+}
+
+textarea.form-control {
+  resize: none; /* Disable resize to keep design consistent */
+}
+
+.submit-btn {
+  background-color: #FF5733; /* Primary button color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded button */
+  padding: 10px 20px; /* Space inside the button */
+  font-size: 1rem; /* Text size */
+  font-weight: bold; /* Bold text */
+  color: #fff; /* White text */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.submit-btn:hover {
+  background-color: #e44a2b; /* Slightly darker on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 4px 15px rgba(255, 87, 51, 0.2); /* Shadow on hover */
+}
+
+.submit-btn:active {
+  transform: translateY(1px); /* Slight press down on click */
+}
+
+/* @media (max-width: 768px) {
+  .contact-container {
+    padding: 20px; 
+  }
+
+  .contact-container h2 {
+    font-size: 1.8rem; 
+  }
+}  */
+
+
+
+
+
+
+
+/* Footer Styling */
+.footer {
+  background-color: #333; /* Dark background for footer */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+
+.about-container {
+  background-color: #f9f9f9; /* Light background for readability */
+  padding: 40px 20px; /* Space around the content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 900px; /* Limit width for better readability */
+  margin: 40px auto; /* Center the container */
+}
+
+.about-container h2 {
+  font-size: 2.5rem; /* Large heading for emphasis */
+  color: #333; /* Dark color for contrast */
+  text-align: center; /* Center align the main heading */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.about-container p {
+  font-size: 1.1rem; /* Comfortable reading size */
+  color: #555; /* Slightly lighter text for body */
+  line-height: 1.6; /* Better spacing between lines */
+  margin-bottom: 20px; /* Space between paragraphs */
+}
+
+.about-details {
+  background-color: #ffffff; /* White background for sections */
+  padding: 30px; /* Inner padding for content spacing */
+  border-radius: 8px; /* Rounded corners for inner sections */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05); /* Light shadow for sections */
+}
+
+.about-details h3 {
+  font-size: 1.8rem; /* Larger size for subheadings */
+  color: #FF5733; /* Highlight color for subheadings */
+  margin-bottom: 15px; /* Space below subheadings */
+}
+
+.about-details ul {
+  list-style-type: disc; /* Bullet points for lists */
+  margin-left: 20px; /* Indentation for list */
+  color: #333; /* Dark color for list items */
+}
+
+.about-details li {
+  margin-bottom: 10px; /* Space between list items */
+  font-size: 1.1rem; /* Consistent size with body text */
+}
+
+.about-details a {
+  color: #FF5733; /* Brand color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Emphasize links */
+  transition: color 0.3s; /* Smooth color change on hover */
+}
+
+.about-details a:hover {
+  color: #e44a2b; /* Slightly darker on hover */
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+
+  .about-container h2 {
+    font-size: 2rem; /* Adjust heading size for mobile */
+  }
+
+  .about-details h3 {
+    font-size: 1.5rem; /* Adjust subheading size for mobile */
+  }
+
+  .about-details p,
+  .about-details li {
+    font-size: 1rem; /* Slightly smaller text for mobile */
+  }
+
+
+  .contact-container {
+    padding: 20px; /* Adjust padding on smaller screens */
+  }
+
+  .contact-container h2 {
+    font-size: 1.8rem; /* Slightly smaller heading */
+  }
+
+
+
+  .testimonials h2 {
+    font-size: 2rem;
+  }
+
+  .testimonial-item {
+    padding: 20px;
+  }
+
+  .testimonial-item p {
+    font-size: 1rem;
+  }
+
+  .testimonial-item h4 {
+    font-size: 1rem;
+  }
+
+}
+
+
+
+/*login page styling*/
+
+General Body Styles
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the entire page */
+.login-page {
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  min-height: 100vh; /* Full viewport height */
+  background: url('C:\Project0\FitBit\client\src\assets\images\a-room-featuring-a-large-window-and-a-rug-photo.jpg') no-repeat center center fixed; /* Background image */
+  background-size: cover; /* Cover the entire area */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  font-family: Arial, sans-serif; /* Font family */
+  /* background: linear-gradient(135deg, #0052D4, #65C7F7);} */
+}
+
+/* Container for the Login Form */
+.login-container {
+  background-color: rgba(255, 255, 255, 0.95); /* Light, semi-transparent background */
+  padding: 40px 30px; /* Inner padding for spacing */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  max-width: 400px; /* Maximum width */
+  width: 90%; /* Responsive width */
+  text-align: center; /* Center text */
+}
+
+/* Heading Styling */
+h2 {
+  font-size: 2rem; /* Font size */
+  color: #333; /* Text color */
+  margin-bottom: 10px; /* Spacing below */
+}
+
+/* Paragraph Styling */
+p {
+  color: #555; /* Softer text color */
+  margin-bottom: 20px; /* Spacing below */
+}
+
+/* Form Styling */
+form {
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  gap: 15px; /* Space between inputs */
+}
+
+/* Input Fields */
+input {
+  padding: 15px; /* Padding inside input */
+  border: 1px solid #ddd; /* Border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Button Styling */
+button {
+  padding: 15px; /* Padding inside button */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #FF5733; /* Button color */
+  color: white; /* Text color */
+  font-size: 1.2rem; /* Font size */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #e64a19; /* Darker color on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Error Message */
+.error-message {
+  color: red; /* Error text color */
+  font-size: 0.9rem; /* Font size */
+  margin-top: 10px; /* Spacing above */
+}
+
+/* Extra Options Links */
+.extra-options {
+  margin-top: 20px; /* Spacing above */
+}
+
+.extra-options a {
+  color: #FF5733; /* Link color */
+  text-decoration: none; /* No underline */
+  font-weight: bold; /* Bold text */
+}
+
+.extra-options a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+
+.signup-page {
+  background: url('C:\Project0\FitBit\client\src\assets\images\pieces-blue-stationery_23-2148169528.jpg') no-repeat center center fixed; /* Set the image path */
+  background-size: cover; /* Cover the entire background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding: 0 20px; /* Add some padding for responsiveness */
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.signup-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for better text readability */
+  padding: 40px 30px; /* Padding around the form */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  max-width: 400px; /* Max width for form */
+  width: 100%;
+  text-align: center;
+}
+
+.signup-container h2 {
+  font-size: 2rem;
+  color: #333; /* Darker color for readability */
+  margin-bottom: 10px;
+}
+
+.signup-container p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between inputs */
+}
+
+.signup-container input {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded input fields */
+  font-size: 1rem; /* Readable text size */
+}
+
+.signup-container button {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #FF5733; /* Primary button color */
+  color: white; /* Text color */
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.signup-container button:hover {
+  background-color: #e64a19; /* Darker color on hover */
+}
+
+
+
+
+
+
+/* src/components/Dashboard.css */
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  background-color: #f5f5f5; /* Light background color */
+  margin-top: 80px; /* Offset for fixed navbar */
+}
+
+.dashboard-header {
+  background-color: #282c34; /* Dark background for the header */
+  color: white; /* White text color */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.dashboard-section {
+  background-color: white; /* White background for the section */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+.dashboard-section h2 {
+  margin-top: 0;
+  color: #333; /* Dark text color */
+}
+
+.dashboard-section p {
+  font-size: 1.1em;
+  color: #666; /* Gray text color for the paragraph */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 15px;
+  }
+
+  .dashboard-content {
+    padding: 15px;
+  }
+
+  .dashboard-section {
+    padding: 15px;
+  }
+}
+
+/* src/components/NavBar.css */
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282c34; /* Dark background color */
+  padding: 0 30px;
+  height: 80px; /* Navbar height */
+  color: white; /* Text color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.nav-links li {
+  position: relative; /* For positioning the underline */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #61dafb; /* Light blue color on hover */
+  transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px; /* Position the underline */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Underline thickness */
+  background-color: #61dafb; /* Underline color */
+  transform: scaleX(0);
+  transition: transform 0.3s; /* Smooth transition for underline */
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus::after {
+  transform: scaleX(1); /* Show underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-content {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+
+/*start*/
+
+:root {
+  --primary-color: #0097a7;
+  --background-color: #f0f0f0;
+  --input-border-color: rgba(0, 0, 0, 0.2);
+  --input-focus-color: #0097a7;
+  --button-bg-color: #0097a7;
+  --button-text-color: white;
+  --button-hover-bg-color: #007a87;
+  --error-color: #ff5252;
+  --border-radius: 8px;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-goal-form {
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.create-goal-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--border-radius);
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--input-focus-color);
+}
+
+.submit-btn {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+.error-message {
+  margin-top: 10px;
+  color: var(--error-color);
+  font-size: 14px;
+  text-align: center;
+}
+
+
+
+.fitness-body {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.fitness-goals h2 {
+  font-size: 22px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.goals-list {
+  list-style: none;
+  padding: 0;
+}
+
+.goal-item {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goal-text, .goal-date {
+  color: #333;
+}
+
+.goal-date {
+  font-size: 14px;
+  color: grey;
+}
+
+.goal-item button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 8px 12px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.goal-item button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+.no-goals {
+  text-align: center;
+  font-size: 18px;
+  color: grey;
+}
+
+.error {
+  color: var(--error-color);
+  text-align: center;
+}
+
+.edit-fitness-goal {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-fitness-goal h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.edit-fitness-goal input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.edit-fitness-goal button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.edit-fitness-goal button:hover {
+  opacity: 0.9;
+}
+
+.edit-fitness-goal .submit-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.edit-fitness-goal .cancel-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+
+
+
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+}
+
+h2, h3 {
+  color: #2c3e50;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Workout Log Form */
+.workout-log-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.workout-log-form .form-group {
+  margin-bottom: 15px;
+}
+
+.workout-log-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #34495e;
+  font-weight: 500;
+}
+
+.workout-log-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.workout-log-form input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.workout-log-form .submit-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.workout-log-form .submit-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Edit Workout Log */
+.edit-worklog {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.edit-worklog input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.edit-worklog button {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-worklog button:hover {
+  background-color: #219150;
+}
+
+.edit-worklog button:last-child {
+  background-color: #e74c3c;
+}
+
+.edit-worklog button:last-child:hover {
+  background-color: #c0392b;
+}
+
+/* Workout Logs List */
+.workout-log-list {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.workout-log-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.workout-log-list li {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.workout-log-list li p {
+  margin: 0;
+  color: #34495e;
+  font-size: 16px;
+}
+
+.workout-log-list li button {
+  background-color: #3498db;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.workout-log-list li button:hover {
+  background-color: #2980b9;
+}
+
+.workout-log-list li button:last-child {
+  background-color: #e74c3c;
+}
+
+.workout-log-list li button:last-child:hover {
+  background-color: #c0392b;
+}
+
+
+
+
+
+
+.workout-insights {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.insights-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.insights-list {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+.insights-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.insights-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.insight-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.chart-container {
+  margin: 20px 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.no-insights {
+  font-style: italic;
+  color: #888;
+  text-align: center;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+.text-warning {
+  color: #ffc107;
+}
+
+.text-success {
+  color: #28a745;
+}
+
+
+
+
+
+
+
+
+/* 
+.fitness-insights {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.fitness-insights h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.insight-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.insight-details p {
+  font-size: 18px;
+  color: #555;
+  margin: 0;
+}
+
+.insight-details p span {
+  font-weight: 600;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  .fitness-insights {
+    max-width: 700px;
+  }
+
+  .insight-details {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .insight-details p {
+    font-size: 20px;
+  }
+} */
+
+
+
+
+
+
+
+.fitness-insights {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.insights-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.insight-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.insight-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  flex: 1 1 30%; /* Responsive flex basis */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.insight-icon {
+  font-size: 36px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 10px;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  transition: width 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .nutrition-insights {
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.nutrition-insights h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.insight-details {
+  display: grid;
+  gap: 15px;
+  justify-content: center;
+}
+
+.insight-details p {
+  font-size: 18px;
+  color: #34495e;
+  margin: 0;
+}
+
+.insight-details p span {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+@media (min-width: 768px) {
+  .nutrition-insights {
+    max-width: 700px;
+  }
+
+  .insight-details {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .insight-details p {
+    font-size: 20px;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+.nutrition-insights {
+  background-color: #FFF9C4; /* Pastel Yellow */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #333;
+}
+
+.insight-card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.insight-icon {
+  font-size: 40px;
+  color: #FF7043; /* A warm color for the icon */
+  margin-right: 15px;
+}
+
+.insight-details {
+  flex: 1;
+}
+
+.progress-bar {
+  background-color: #E0E0E0;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.progress {
+  background-color: #FF7043; /* Same color as the icon */
+  height: 10px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General form container styling */
+.nutrition-form {
+  background-color: #f8f9fa;
+  border: 1px solid #e3e8ee;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+.nutrition-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #34495e;
+}
+
+/* Field styling */
+.nutrition-form select,
+.nutrition-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Error message styling */
+.error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+/* Styling for quantity and calories */
+.nutrition-form div {
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.nutrition-form button {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.nutrition-form button:hover {
+  background-color: #27ae60;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .nutrition-form {
+    padding: 15px;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Container for the nutrition logs */
+.nutrition-log {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f7fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+.nutrition-log h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+/* Nutrition logs list */
+.nutrition-log ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nutrition-log li {
+  background-color: #ffffff;
+  border: 1px solid #e3e8ee;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Log details */
+.nutrition-log p {
+  font-size: 16px;
+  color: #2c3e50;
+  margin: 5px 0;
+}
+
+/* Button styles */
+.nutrition-log button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.nutrition-log button:hover {
+  opacity: 0.9;
+}
+
+/* Edit and delete button colors */
+.nutrition-log button[type="button"] {
+  background-color: #e74c3c;
+  color: white;
+  margin-left: 10px;
+}
+
+.nutrition-log button.edit-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.nutrition-log button.save-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+/* Form styling */
+.nutrition-log form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nutrition-log label {
+  font-size: 14px;
+  color: #34495e;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.nutrition-log input,
+.nutrition-log select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.nutrition-log p.calories-display {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nutrition-log {
+    padding: 10px;
+  }
+
+  .nutrition-log li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nutrition-log button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
