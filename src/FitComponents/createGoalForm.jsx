@@ -20,7 +20,7 @@ const CreateGoalForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/fitness-goals",
+        "https://backend-2jzz.onrender.com/api/fitness-goals",
         { goal, targetDate, status },
         {
           headers: {
