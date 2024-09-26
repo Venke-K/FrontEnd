@@ -21,7 +21,7 @@ const WorkoutInsights = () => {
 
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/workouts/insights",
+          "https://backend-2jzz.onrender.com/api/workouts/insights",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

@@ -20,7 +20,7 @@ const EditWork = ({ log, onSave, onCancel }) => {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/workouts/${log._id}`, // Ensure goal._id is correct
+        `https://backend-2jzz.onrender.com/api/workouts/${log._id}`, // Ensure goal._id is correct
         {
           Exercise: editedExercise,
           Duration: editedDuration,

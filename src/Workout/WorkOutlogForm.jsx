@@ -23,7 +23,7 @@ const WorkoutLogForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/workouts",
+        "https://backend-2jzz.onrender.com/api/workouts",
         { Exercise, Duration, Intensity, Calories, Date },
         {
           headers: {

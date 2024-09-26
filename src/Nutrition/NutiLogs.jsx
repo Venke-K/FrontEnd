@@ -49,7 +49,7 @@ const NutiLogs = () => {
     const fetchNutiLogs = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/nutrition",
+          "https://backend-2jzz.onrender.com/api/nutrition",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -67,7 +67,7 @@ const NutiLogs = () => {
   // Handle delete log
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/nutrition/${id}`, {
+      await axios.delete(`https://backend-2jzz.onrender.com/api/nutrition/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -82,7 +82,7 @@ const NutiLogs = () => {
   const handleSave = async (values) => {
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/nutrition/${editingLog._id}`,
+        `https://backend-2jzz.onrender.com/api/nutrition/${editingLog._id}`,
         { ...values, calories }, // Save updated calories
         {
           headers: {

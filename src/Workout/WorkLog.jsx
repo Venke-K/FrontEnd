@@ -19,7 +19,7 @@ const WorkoutLog = () => {
         return navigate("/");
       }
       try {
-        const response = await axios.get("http://localhost:5000/api/workouts", {
+        const response = await axios.get("https://backend-2jzz.onrender.com/api/workouts", {
           headers: { Authorization: `Bearer ${token}` },
         });
 

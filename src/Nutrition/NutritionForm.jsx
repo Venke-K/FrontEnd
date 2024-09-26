@@ -99,7 +99,7 @@ const NutritionForm = () => {
       const token = localStorage.getItem("token");
       console.log("Token", token); // Fetch token from storage
       const response = await axios.post(
-        "http://localhost:5000/api/nutrition",
+        "https://backend-2jzz.onrender.com/api/nutrition",
         values,
         {
           headers: {
