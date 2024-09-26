@@ -31,7 +31,7 @@ const Dashboard = () => {
         <section
           className="dashboard-section"
           style={{
-            backgroundImage: `url('src/assets/images/360_F_776599589_N9536jqKzQA4q6jtRbwH7hQFgtwrYKnR.jpg')`,
+            backgroundImage: `url('/assets/images/360_F_776599589_N9536jqKzQA4q6jtRbwH7hQFgtwrYKnR.jpg')`,
             marginBottom: "9px",
           }}
         >
