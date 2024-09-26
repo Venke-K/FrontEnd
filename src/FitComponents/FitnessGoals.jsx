@@ -20,7 +20,7 @@ const FitnessGoals = () => {
 
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/fitness-goals",
+          "https://backend-2jzz.onrender.com/api/fitness-goals",
           { headers: { Authorization: `Bearer ${token}` } }
         );
         setGoals(response.data);

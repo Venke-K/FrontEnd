@@ -18,7 +18,7 @@ const EditFitnessGoal = ({ goal, onSave, onCancel }) => {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/fitness-goals/${goal._id}`, // Ensure goal._id is correct
+        `https://backend-2jzz.onrender.com/api/fitness-goals/${goal._id}`, // Ensure goal._id is correct
         {
           goal: editedGoal,
           targetDate: editedTargetDate,

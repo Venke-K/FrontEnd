@@ -15,7 +15,7 @@ const Fitinsightsdata = () => {
       try {
         const token = localStorage.getItem("token");
         const response = await axios.get(
-          "http://localhost:5000/api/fitness-goals/insights",
+          "https://backend-2jzz.onrender.com/api/fitness-goals/insights",
           {
             headers: {
               Authorization: `Bearer ${token}`,

@@ -20,7 +20,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://backend-2jzz.onrender.com/api/auth/register",
         formData
       );
       console.log("Registration successful:", response.data);
