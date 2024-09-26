@@ -55,7 +55,7 @@ const WorkoutLog = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/workouts/${id}`);
+      await axios.delete(`https://backend-2jzz.onrender.com/api/workouts/${id}`);
       setLogs(logs.filter((log) => log._id !== id));
     } catch (error) {
       console.error("Error deleting worklog:", error);
