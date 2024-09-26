@@ -18,7 +18,7 @@ const NutritionInsights = () => {
       try {
         const token = localStorage.getItem("token");
         const response = await axios.get(
-          `http://localhost:5000/api/nutrition/insights`,
+          `https://backend-2jzz.onrender.com/api/nutrition/insights`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

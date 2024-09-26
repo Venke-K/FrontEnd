@@ -17,7 +17,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('http://localhost:5000/api/auth/login', formData);
+      const { data } = await axios.post('https://backend-2jzz.onrender.com/api/auth/login', formData);
       if (data.token) {
         localStorage.setItem('token', data.token);
         toast.success('Login Successfull!!') 
