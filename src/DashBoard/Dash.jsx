@@ -16,7 +16,7 @@ const Dashboard = () => {
       <header className="dashboard-header">
         <h1>Welcome to Your Fitness Tracker </h1>
       </header>
-      <main
+      <main   
         className="dashboard-content"
         style={{ backgroundColor: "#0097a7" }}
       >
