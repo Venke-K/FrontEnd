@@ -6,6 +6,8 @@ import WorkoutLogForm from "../Workout/WorkOutlogForm";
 import WorkoutLog from "../Workout/WorkLog";
 import NutritionForm from "../Nutrition/NutritionForm";
 import NutiLogs from "../Nutrition/NutiLogs";
+import bgImage from './assets/images/360_F_776599589_N9536jqKzQA4q6jtRbwH7hQFgtwrYKnR.jpg';
+
 
 const Dashboard = () => {
   return (
@@ -31,7 +33,7 @@ const Dashboard = () => {
         <section
           className="dashboard-section"
           style={{
-            backgroundImage: `url('./assets/images/360_F_776599589_N9536jqKzQA4q6jtRbwH7hQFgtwrYKnR.jpg')`,
+            backgroundImage: `url(${bgImage})`,
             marginBottom: "9px",
           }}
         >
