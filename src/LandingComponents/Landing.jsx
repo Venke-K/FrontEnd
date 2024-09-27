@@ -50,7 +50,7 @@ function Landing() {
               progress, and achieve your goals.
             </p>
             <img
-              src="src\assets\images\shutterstock_383084119_1000x.webp"
+              src="\assets\images\shutterstock_383084119_1000x.webp"
               alt="Fitness Image"
               className="hero-image"
             />
@@ -68,7 +68,7 @@ function Landing() {
           </div>
           <div className="feature-item">
             <img
-              src="src\assets\images\fitness-goals-icon-achieving-your-260nw-2306369233.webp"
+              src="\assets\images\fitness-goals-icon-achieving-your-260nw-2306369233.webp"
               alt="Icon 2"
             />
             <h3>Set Goals</h3>
@@ -95,7 +95,7 @@ function Landing() {
             <h2>Our Services</h2>
             <div className="service-item">
               <img
-                src="src\assets\images\connected-workout-abstract-concept-vector-illustration-digitally-systems-create-personalized-program-fitness-equipment-smart-gym-262138448.webp"
+                src="\assets\images\connected-workout-abstract-concept-vector-illustration-digitally-systems-create-personalized-program-fitness-equipment-smart-gym-262138448.webp"
                 alt="Workout Icon"
               />
               <h3>Personalized Workouts</h3>
@@ -105,7 +105,7 @@ function Landing() {
               </p>
             </div>
             <div className="service-item">
-              <img src="src\assets\images\757012.png" alt="Nutrition Icon" />
+              <img src="\assets\images\757012.png" alt="Nutrition Icon" />
               <h3>Nutrition Guidance</h3>
               <p>
                 Get advice on diet and nutrition to complement your fitness
@@ -114,7 +114,7 @@ function Landing() {
             </div>
             <div className="service-item">
               <img
-                src="src\assets\images\track-your-progress-business-color-260nw-2265795709.webp"
+                src="\assets\images\track-your-progress-business-color-260nw-2265795709.webp"
                 alt="Progress Icon"
               />
               <h3>Progress Tracking</h3>
@@ -127,7 +127,7 @@ function Landing() {
           <h2>What Our Users Say</h2>
           <div className="testimonial-container">
             <div className="testimonial-item">
-              <img src="src\assets\images\Untitled.jpg" alt="Alex R. Photo" />
+              <img src="\assets\images\Untitled.jpg" alt="Alex R. Photo" />
               <p>
                 `Fit-Track has transformed my fitness journey! With detailed
                 progress tracking, personalized plans, and expert advice, I feel
@@ -137,7 +137,7 @@ function Landing() {
               <h4>- Jacob R.</h4>
             </div>
             <div className="testimonial-item">
-              <img src="src\assets\images\images.jpg" alt="kelly K. Photo" />
+              <img src="\assets\images\images.jpg" alt="kelly K. Photo" />
               <p>
                 `I love how easy it is to log my workouts and track my nutrition
                 with Fit-Track. The app`s user-friendly interface and detailed
@@ -148,7 +148,7 @@ function Landing() {
               <h4>- Kelly K.</h4>
             </div>
             <div className="testimonial-item">
-              <img src="src\assets\images\pic.jpg" alt="hanuman M. Photo" />
+              <img src="\assets\images\pic.jpg" alt="hanuman M. Photo" />
               <p>
                 `The progress reports and tailored feedback from Fit-Track are
                 incredibly motivating. Since using the app, I`ve achieved so
