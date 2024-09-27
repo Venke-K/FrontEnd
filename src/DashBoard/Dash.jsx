@@ -40,7 +40,8 @@ const Dashboard = () => {
         </section>
         <section
           className="dashboard-section"
-          style={{  backgroundImage: `url('./assets/images/1000_F_191768899_19y9lsjTvvXoqUvsnunc9iadgvuhEdL6.jpg')`,  marginBottom: "10px" }}
+          style={{  backgroundImage: `url('/assets/images/1000_F_191768899_19y9lsjTvvXoqUvsnunc9iadgvuhEdL6.jpg')`
+,  marginBottom: "10px" }}
         >
           <WorkoutLogForm />
           <WorkoutLog />
