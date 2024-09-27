@@ -6,7 +6,7 @@ import WorkoutLogForm from "../Workout/WorkOutlogForm";
 import WorkoutLog from "../Workout/WorkLog";
 import NutritionForm from "../Nutrition/NutritionForm";
 import NutiLogs from "../Nutrition/NutiLogs";
-import bgImage from './assets/images/360_F_776599589_N9536jqKzQA4q6jtRbwH7hQFgtwrYKnR.jpg';
+
 
 
 const Dashboard = () => {
@@ -33,7 +33,7 @@ const Dashboard = () => {
         <section
           className="dashboard-section"
           style={{
-            backgroundImage: `url(${bgImage})`,
+            backgroundImage: `url('/assets/images/1000_F_191768899_19y9lsjTvvXoqUvsnunc9iadgvuhEdL6.jpg')`,
             marginBottom: "9px",
           }}
         >
@@ -50,7 +50,7 @@ const Dashboard = () => {
         </section>
         <section
           className="dashboard-section"
-          style={{ backgroundImage: `url('./assets/images/1000_F_305960290_U1GaI4x1lz1GyYGVsNyn72eJa6wyEJEZ.jpg')`, marginBottom: "10px" }}
+          style={{ backgroundImage: `url('/assets/images/1000_F_305960290_U1GaI4x1lz1GyYGVsNyn72eJa6wyEJEZ.jpg')`, marginBottom: "10px" }}
         >
           <NutritionForm />
           <NutiLogs />
