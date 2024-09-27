@@ -34,3 +34,17 @@ Key Features
    Integration with Backend:
         The frontend interacts with a backend service to perform all CRUD operations (Create, Read, Update, Delete) on user workout, diet, and progress data.
         Data is securely stored in MongoDB Atlas.
+
+
+
+   API Reference
+
+The frontend communicates with the backend using RESTful API endpoints. Below are the main API endpoints used:
+
+   User Registration: POST /api/auth/register
+   User Login: POST /api/auth/login
+   Fetch User Data: GET /api/user
+   Add Workout: POST /api/workouts
+   Fetch Workouts: GET /api/workouts
+   Update Workout: PUT /api/workouts/:id
+   Delete Workout: DELETE /api/workouts/:id     
