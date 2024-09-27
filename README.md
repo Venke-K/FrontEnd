@@ -19,3 +19,12 @@ Tech Stack
   React Router: Handles client-side routing.
   Chart.js / Recharts: Used for visualizing user data.
   Netlify: Deployed for hosting the frontend.
+
+API Integration
+
+The frontend communicates with the backend using REST APIs. Here are some key API endpoints:
+
+   POST /api/auth/login – User login
+   POST /api/auth/register – User registration
+   GET /api/user/activity – Fetch user activity data
+   PUT /api/user/activity – Update user activity
