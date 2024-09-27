@@ -306,7 +306,7 @@
 
 
 .contact-page {
-  background: url('assets\images\photo-1710701446907-b3681c6f69a5.jpg') no-repeat center center fixed; /* Set the image path */
+  background: url('/assets/images/photo-1710701446907-b3681c6f69a5.jpg') no-repeat center center fixed; /* Set the image path */
   background-size: cover; /* Cover the entire background */
   padding: 60px 0; /* Padding to give some space around the form */
 }
