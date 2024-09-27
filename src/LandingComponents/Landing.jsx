@@ -60,7 +60,7 @@ function Landing() {
         <section className="features">
           <div className="feature-item">
             <img
-              src="src\assets\images\running-icon-illustration-symbol-vector.jpg"
+              src="\assets\images\running-icon-illustration-symbol-vector.jpg"
               alt="Icon 1"
             />
             <h3>Track Workouts</h3>
@@ -79,7 +79,7 @@ function Landing() {
           </div>
           <div className="feature-item">
             <img
-              src="src\assets\images\KHNI-2024-Trends-circle.png"
+              src="\assets\images\KHNI-2024-Trends-circle.png"
               alt="Icon 3"
             />
             <h3>Monitor Nutrition</h3>
